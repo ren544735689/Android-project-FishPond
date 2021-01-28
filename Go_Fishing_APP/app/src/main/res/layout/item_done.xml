@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/fish" />
+
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/item_image"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="15sp"
+        tools:text="time" />
+
+    <TextView
+        android:id="@+id/item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_time"
+        android:layout_alignStart="@id/item_image"
+        android:layout_marginStart="63dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="15sp"
+        tools:text="content"/>
+
+    <ImageView
+        android:id="@+id/item_ball"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/item_image"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/fish_ball_christmas" />
+
+    <ImageView
+        android:id="@+id/item_fish"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/item_ball"
+        android:layout_marginBottom="40dp"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:scaleType="centerInside"
+        android:src="@drawable/star1" />
+
+</RelativeLayout>
